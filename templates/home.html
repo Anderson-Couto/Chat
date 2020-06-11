@@ -2,5 +2,26 @@
 
 {% block content %}
 
-<p class='lead'>Welcome Home</p>
+<p class='lead'>Página Inicial</p>
+
+<div>
+    <h1>Passo 1</h1>
+    <p> Para criar os usuários:</p>
+    <ul>
+        <li>A partir de um terminal, crie dois usuarios com o comando "python manage.py createsuperuser"</li>
+        <li>Faça login com um dos usuários em "http://127.0.0.1:8000/admin"</li>
+        <li>Abra outra página do navegador em modo anônimo e logo com o outro usuário no mesmo link</li>
+    </ul>
+</div>
+
+<div>
+    <h1>Passo 2</h1>
+    <p> Para acessar um chat:</p>
+    <ul>
+        <li>Considere dois usuarios 'aba_nao_anonima' e 'aba_anonima' quaisquer:</li>
+        <li>Na aba não anonima do navegador, acesse: "http://127.0.0.1:8000/messafes/aba_anonima" </li>
+        <li>Na aba anonima do navegador, acesse: "http://127.0.0.1:8000/messafes/aba_nao_anonima"</li>
+        <li>Está tudo pronto para começar a conversa!</li>
+    </ul>
+</div>
 {% endblock %}
